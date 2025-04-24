@@ -34,7 +34,7 @@ print("train report")
 reportTrain = classification_report(y_train, y_pred_train)
 print(reportTrain)
 print(confusion_matrix(y_train, y_pred_train))
-print(f'Accuracy: {accuracy_score(y_test, y_pred_test):.2f}',"\n\n\n")
+print(f'Accuracy: {accuracy_score(y_train, y_pred_train):.2f}',"\n\n\n")
 
 
 import matplotlib.pyplot as plt
