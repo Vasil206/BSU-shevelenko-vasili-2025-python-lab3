@@ -13,7 +13,7 @@ y_test = test['Transported_int']
 
 from sklearn.tree import DecisionTreeClassifier
 
-tree = DecisionTreeClassifier(random_state=42)
+tree = DecisionTreeClassifier(random_state=42, max_depth=7)
 tree.fit(x_train, y_train)
 
 
@@ -40,6 +40,6 @@ print(f'Accuracy: {accuracy_score(y_train, y_pred_train):.2f}',"\n\n\n")
 import matplotlib.pyplot as plt
 from sklearn.tree import plot_tree
 
-plt.figure(figsize=(20, 8))
-plot_tree(tree, filled=True)
-plt.show()
+#plt.figure(figsize=(20, 8))
+#plot_tree(tree, filled=True)
+#plt.show()
